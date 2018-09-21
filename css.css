@@ -3,41 +3,39 @@
     /*fonts: https://www.w3schools.com/cssref/css_websafe_fonts.asp*/
     /*font-family: "Lucida Console", Monaco, monospace;*/
     font-family: 'Kosugi Maru', sans-serif;
-
 }
 
 div {
-    border-width: 5px;
-    border-color: black;
-    border: solid;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 5px;
+    margin: 0.3em;
+    padding: 0 0.5em; 
+    word-wrap: break-word;
 }
 
 .heading {
     text-align: center;
-    
-    font-size: 40px;
+    border: none;
+    font-size: 3em;
 }
 
 /* nav bar */
 .topnav {
-    background-color: #333;
+    background-color: #303030;
     overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.6em 1em;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1.1em;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #e5e5e5;
     color: black;
 }
 
@@ -50,12 +48,78 @@ div {
 
 /* about */
 
+#leahpic {
+    width: 10em;
+    float: left;
+}
+
 /* activities */
+.tab-list {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-list li {
+    display: inline-block;
+    list-style-type: none;
+    background-color: #303030;
+    border-bottom: 0.2em solid #e5e5e5;
+    
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    
+}
+
+.tab-list a {
+    color: #f2f2f2;
+    display: block;
+    padding: 0.3em 0.5em 0.3em 0.5em;
+}
+
+.tab-list li.active, .tab-list li.hover {
+    background-color: #e5e5e5;
+    border-bottom: 0.2em solid #e5e5e5;
+}
+
+.tab-list li.active a, .tab-list li a:hover {
+    color: #666;
+    background-color: #e5e5e5;
+}
+
+.tab-panel {
+    display: none;
+    background-color: #e5e5e5;
+    color: #666;
+    min-height: 10em;
+    max-width: 60em;
+    overflow: auto;
+    margin: 0;
+    padding: 0.6em;
+    border: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.tab-panel p {
+    margin: 1em;
+}
+
+.in-panel {
+    width: 16em;
+    float: left;
+    margin-right: 1em;
+}
+
+.text {
+    border: none;
+}
 
 /* contact */
 .box {
-    margin: 12px;
-    padding: 10px;
+    margin: 0.6em;
+    padding: 0.5em;
     width: fit-content;
     
     background-color: white;
@@ -67,10 +131,14 @@ div {
     float: left;
 }
 
-.behindDiv {
+boxBelow {
+    float: none;
+}
+
+.behindBox {
     width: fit-content;
-    margin-bottom: -20px;
-    padding: 10px;
+    margin-bottom: -1em;
+    padding: 0.5em;
     
     background-color: #d0b2ea;
     color: white

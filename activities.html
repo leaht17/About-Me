@@ -3,9 +3,7 @@
 <head>
     <title>Leah's Page</title>
     <link rel="stylesheet" href="css.css">
-    
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
-
 </head>
 <body>
     <a href="index.html"><div class="heading">Leah Tran</div></a>
@@ -16,8 +14,40 @@
         <a class="active" href="activities.html">Activities</a>
         <a href="contact.html">Contact</a>
     </div>
-    <div>
-    <p>Insert list of activities.</p>
+    
+    <ul class="tab-list">
+        <li class="active"><a class="tab-control" href="#tab-1">STARS</a></li>
+        <li><a class="tab-control" href="#tab-2">Code</a></li>
+        <li><a class="tab-control" href="#tab-3">Art</a></li>
+    </ul>
+    <div class="tab-panel active" id="tab-1"><img src="pics/STARSgroupphoto.JPG" alt="STARS group photo" class="in-panel"><div class="text"><p>The Washington State Academic RedShirts Program at the University of Washington Seattle.</p>
+    <p>As a member of UW's STARS Cohort V, I interact and study alongside peers in subjects essential for engineering and learn how to navigate college and the tech world.</p>
+    <p></p>
+    </div></div>
+    
+    <div class="tab-panel" id="tab-2">
+    <p>Coding to me is a way to create something that others can admire and utilize in their daily life. Whether it is a student turning in a homework assignment or a child playing games with their friends, the platform they are all on stems from programming.</p>
+    <p>I began programming when I learned from the Girls Who Code Summer Immersion Program. After two months with my female peers, I walked out of the program understanding basic topics in computer science and with a determination to delve into it further.</p>
+    <p>To learn more about coding and other tech fields, I joined my school's MESA Robotics club and took AP Computer Science. </p>
+    
     </div>
+    
+    <div class="tab-panel" id="tab-3">
+    <p></p>
+    </div>
+    
+    <script src="jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js.js" type="text/javascript"></script>
+<!--
+    <div class="fitContent">
+        <div class="fitItems">
+            <div class="actItem">One</div>
+            <div class="actItem">Two</div>
+            <div class="actItem">Three</div>
+        </div>
+        <div class="actFoc">Right</div>
+    </div>
+-->
+    
 </body>
 </html>
